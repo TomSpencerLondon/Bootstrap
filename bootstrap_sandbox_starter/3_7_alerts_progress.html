@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <title>Bootstrap Sandbox</title>
 </head>
 <body>
@@ -83,83 +85,97 @@
         <!--########################START HERE#########################-->
 
         <!-- ALERTS -->
-        <div>
+        <div class="alert alert-primary">
           <strong>Primary</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-secondary">
           <strong>Secondary</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-success">
             <strong>Success</strong> Blog post added
         </div>
 
-        <div>
+        <div class="alert alert-danger">
             <strong>Danger</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-info">
             <strong>Info</strong> You have a new message
         </div>
 
-        <div>
+        <div class="alert alert-warning">
             <strong>Warning</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-light">
             <strong>Light</strong> Please check the log files
         </div>
 
-        <div>
+        <div class="alert alert-dark">
             <strong>Dark</strong> Please check the log files
         </div>
 
 
         <!-- DISMISSABLE ALERT -->
-        <div>
-            <button type="button">
-                <span>&times;</span>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class"close" data-dismiss="alert">
+                &times;
             </button>
             <strong>Dismissable</strong> Blog post added
         </div>
 
-        <br><br>
+        <br>
+        <br>
+        <div class="alert alert-success">
+            <h4 class="alert-heading">
+                Congrats!
+            </h4>
+            <p>
+                asdfasdfasfd
+            </p>
+            <p>
+                asdfasdfasdfasdf
+            </p>
+        </div>
 
         <!-- PROGRESS BARS -->
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar" style="width:35%;"></div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+                <div class="progress-bar bg-success" style="width:35%;">35%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+                <div class="progress-bar bg-warning" style="width:55%;">55%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+                <div class="progress-bar bg-info" style="width:75%;">75%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <!-- HEIGHT -->
+        <div class="progress" style="height:1px;">
+                <div class="progress-bar bg-success" style="width:75%;">75%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+                <div class="progress-bar bg-danger progress-bar-striped" style="width:75%;">75%</div>
         </div>
         <br>
-        <div>
-            <div></div>
+        <div class="progress">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:75%;">75%</div>
         </div>
-
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:25%;">25%</div>
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:25%;">25%</div>
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:25%;">25%</div>
+        </div>
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>
